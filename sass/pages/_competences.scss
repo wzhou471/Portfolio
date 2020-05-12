@@ -1,5 +1,5 @@
 .skills-section {
-    @include selection(rgba(255,253,216,0.99), $colour-secondary);
+    @include selection($colour-septenary, $colour-secondary);
     padding: 150px 150px 110px;
     margin: 0 6em;
     background-color: white;
@@ -39,25 +39,29 @@
     }
 }
 
-@media (max-width: 1059px) {
+@media (max-width: 1300px) {
     .skills-section {
         padding: 150px 50px 110px;
-        margin: auto;
     }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 1000px) {
     .skills-section {
-        padding: 150px 5px 60px;
+        margin: auto;
+    }
+    .skills__item{
+        width: 31%;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-section {
+        padding: 150px 11px 110px;
         h1 {
-            font-size: 2em;
+            font-size: 1.8em;
         }
     }
-
-    .skills{
-        &__item {
-            width: 46%;
-        }
-        
+    .skills__item{
+        width: 46%;
     }
 }

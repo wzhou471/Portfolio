@@ -1,5 +1,5 @@
 .training-section {
-    @include selection($colour-secondary, rgba(255,253,216,0.99));
+    @include selection($colour-secondary, $colour-septenary);
     padding: 150px 200px 5px;
     margin: 0 6em;
     background-color: $colour-secondary;
@@ -28,13 +28,23 @@
         }
         a {
             color: $colour-quaternary;
+            &:hover {
+                border-bottom-style: solid;
+                border-bottom-color: $colour-septenary;
+                border-width: thin;
+            }
         }
     }
 }
 
-@media (max-width: 1059px) {
+@media (max-width: 1300px) {
     .training-section {
         padding: 150px 50px 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .training-section {
         margin: auto;
     }
 
@@ -52,10 +62,10 @@
     }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 600px) {
     .training-section {
         h1 {
-            font-size: 2em;
+            font-size: 1.8em;
         }
     }
     

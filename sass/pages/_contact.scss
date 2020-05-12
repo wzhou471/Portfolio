@@ -1,6 +1,6 @@
 .contact-section {
-    @include selection($colour-secondary, rgba(255,253,216,0.99));
-    padding: 150px 200px 25px;
+    @include selection($colour-secondary, $colour-septenary);
+    padding: 150px 200px 40px;
     margin: 0 6em;
     background-color: $colour-secondary;
     color: $colour-quaternary;
@@ -15,7 +15,7 @@
     .btn {
         border-radius: 2em;
         display: inline-block;
-        font-weight: 700;
+        font-weight: bold;
         letter-spacing: .12em;
         padding: 1em 2em;
         margin: 20px 0 0;
@@ -34,18 +34,23 @@
     width: 100%;
 }
 
-@media (max-width: 1059px) {
+@media (max-width: 1300px) {
     .contact-section {
         padding: 150px 50px 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-section {
         margin: auto;
     }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 600px) {
     .contact-section {
-        padding: 100px 0px 0px;
+        padding: 100px 20px 50px;
         h1 {
-            font-size: 2em;
+            font-size: 1.8em;
         }
     }
 }

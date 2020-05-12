@@ -1,6 +1,6 @@
 .name {
     @include height-bk-color($colour-secondary);
-    @include selection($colour-secondary, rgba(255,253,216,0.99));
+    @include selection($colour-secondary, $colour-septenary);
     color: $colour-quaternary;
     text-align: center;
     h1 {
@@ -32,17 +32,22 @@
     }
 }
 
-@media (max-width: 1059px) {
+@media (max-width: 1300px) {
     .intro {
         padding: 100px 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .intro {
         margin: -30vh 0 0;
     }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 600px) {
     .name {
         h1 {
-            font-size: 4em;
+            font-size: 3em;
         }
         h2 {
             font-size: 1.3em;
@@ -51,7 +56,7 @@
     .intro {
         padding: 100px 20px;
         h1 {
-            font-size: 2em;
+            font-size: 1.8em;
         }
     }
 }

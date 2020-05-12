@@ -1,5 +1,5 @@
 .navbar {
-  @include selection($colour-secondary, rgba(255,253,216,0.99));
+  @include selection($colour-secondary, $colour-septenary);
   display: flex;
   position: fixed;
   top: 0;
@@ -9,11 +9,14 @@
   padding: 16px;
   color: $colour-quaternary;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   a {
     color: $colour-quaternary;
-    font-weight: bold;
-    letter-spacing: 0.05em;
+    &:hover {
+      border-bottom-style: solid;
+      border-bottom-color: $colour-septenary;
+      border-width: thin;
+    }
   }
   &__link {
     padding-right: 45px;

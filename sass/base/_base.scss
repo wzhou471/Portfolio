@@ -5,13 +5,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     a {
-        transition: opacity 200ms,
+        transition: all 200ms,
     }
     a:hover {
-        opacity: 0.8;
+        opacity: 0.9;
     }
     i:hover {
-        opacity: 0.8;
+        opacity: 0.9;
     }
 }
 
