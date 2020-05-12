@@ -1,0 +1,18 @@
+@mixin height-bk-color($bg-color) {
+    min-height: 100vh;
+    background-color: $bg-color;
+}
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin selection($color, $bg-color) {
+    ::selection {
+        color: $color;
+        background-color: $bg-color;
+    }
+}

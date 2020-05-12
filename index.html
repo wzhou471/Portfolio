@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willy Zhou - Portfolio</title>
+        <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <script src="https://kit.fontawesome.com/84c07fbaac.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="navbar__link-brand">
+                WZ
+            </div>
+             <div class="navbar__link-toggle">
+               <i class="fas fa-bars fa-2x"></i>
+             </div>
+           <nav class="navbar__items navbar__items--right">
+             <div class="navbar__link">
+                <a href="#presentation-section">PRÉSENTATION</a>
+             </div>
+             <div class="navbar__link">
+                <a href="#training-section">FORMATIONS</a>
+             </div>
+             <div class="navbar__link">
+                <a href="#skills-section">COMPÉTENCES</a>
+             </div>
+             <div class="navbar__link">
+                <a href="#contact-section">CONTACT</a>
+             </div>
+           </nav>
+        </header>
+        <!-- NAVBAR -->
+
+        <main>
+            <!-- PRESENTATION -->
+            <section>
+                <div id="presentation-section" class="name">
+                    <h1>Willy Zhou</h1>
+                    <hr>
+                    <h2>Développeur Web Junior</h2>
+                </div>
+                <div class="intro">
+                    <h1>PRÉSENTATION</h1>
+                    <p>Après plusieurs années dans la vente et la restauration, j'ai décidé de me reconvertir dans le développement web.</p>
+                    <br>
+                    <p>Une formation certifiante m'a permis d'acquérir rapidement plusieurs connaissances techniques tels que MongoDB, Express, React, Node.js et de les appliquer dans ce cadre, sur des projets concluants.</p>
+                    <br>
+                    <p>Je recherche actuellement une entreprise afin d'effectuer un stage ou une alternance pour consolider mes connaissances et obtenir une expérience professionnelle.</p>
+                </div>
+            </section>
+            <!-- PRESENTATION -->
+
+            <!-- FORMATIONS -->
+            <section id="training-section" class="training-section">
+                <h1>FORMATIONS</h1>
+                <div class="trainings">
+                    <div class="trainings__item">
+                        <div>
+                            <h4><a href="https://www.lacapsule.academy/apprendre-a-coder">Développeur web et mobile Javascript, React et Node.js</a></h4>
+                            <h4><a href="https://www.lacapsule.academy/">La Capsule</a>, Paris</h4>
+                            <h4>Jan 2020 - Mars 2020</h4>
+                            <br>
+                            <p>Fonctionnalités développées :</p>
+                            <ul>
+                                <li>site e-commerce (interface responsive, processus d'achat complet, paiement, suivi de commande)</li>
+                                <li>mécanique complète de sign-up / sign-in sécurisée et de session utilisateur</li>
+                                <li>gestion de l'information dans React ( props, états et événements, reverse data flow, Redux, cycle de vie des composants)</li>
+                                <li>gestion de la navigation dans React & React Native</li>
+                                <li>application mobile de chat et de géolocalisation entre utilisateurs</li>
+                                <li>applications mobiles de photos (gestion caméra, stockage d’images)</li>
+                                <li>mise en place d'API et services (Stripe, Cloudinary, Azure, Chart.js, Mapview )</li>
+                                <li>modélisation, création et gestion de la base de données NoSQL</li>
+                            </ul>
+                        </div>
+                        <img src="./public/images/lc.jpeg" alt="capsule logo">
+                    </div>
+                    <div class="trainings__item">
+                        <img src="./public/images/oc.png" alt="oc logo">
+                        <div>
+                            <h4><a href="https://openclassrooms.com/fr/">Développeur web - Diplome RNCP de niveau 5</a></h4>
+                            <h4><a href="https://openclassrooms.com/fr/paths/185-developpeur-web">OpenClassRooms</a></h4>
+                            <h4>Mai 2020 - Mai 2021</h4>
+                            <br>
+                            <p>Exemples de projet à réaliser :</p>
+                            <ul>
+                                <li>dynamisez une page web avec des animations pour rendre un site intéractif</li>
+                                <li>optimisez un site web existant grâce à la mise en place de SEO</li>
+                                <li>construction d’une API sécurisé avec l’OWASP, Node.js, MongoDB, Express</li>
+                                <li>créez un réseau social d’entreprise avec des bases de données SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FORMATIONS -->
+
+            <!-- COMPÉTENCES -->
+            <section id="skills-section" class="skills-section">
+                <h1>COMPÉTENCES</h1>
+                <div class="skills">
+                        <div class="skills__item">
+                            <h3>HTML</h3>
+                            <img src="./public/images/html.png" alt="html logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>CSS</h3>
+                            <img src="./public/images/css.png" alt="css logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>Javascript</h3>
+                            <img src="./public/images/javascript.png" alt="javascript logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>React</h3>
+                            <img src="./public/images/react.png" alt="react logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>Bootstrap</h3>
+                            <img src="./public/images/bootstrap.png" alt="bootstrap logo">
+                        </div>
+
+                        <div class="skills__item">
+                            <h3>Express</h3>
+                            <img src="./public/images/express.png" alt="express logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>Mongo DB</h3>
+                            <img src="./public/images/mongodb.png" alt="mongodb logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>Git</h3>
+                            <img src="./public/images/git.png" alt="mongodb logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>Github</h3>
+                            <img src="./public/images/github.png" alt="github logo">
+                        </div>
+                        <div class="skills__item">
+                            <h3>Animal Crossing</h3>
+                            <img src="./public/images/animal.png" alt="animal logo">
+                        </div>
+                </div>
+            </section>
+            <!-- COMPÉTENCES -->
+
+            <!-- CONTACT -->
+            <section id="contact-section" class="contact-section">
+                <h1>CONTACT</h1>
+                <div class="contact">
+                    <p>Si vous souhaitez obtenir plus d'informations, n'hésitez pas à me contacter !</p>
+                    <a class="btn" href="mailto:wzhou471@gmail.com">ENVOYER UN MAIL</a>
+                    <div>
+                        <a href="https://www.linkedin.com/in/willy-zhou-17281619b/"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/wzhou471"><i class="fab fa-github-alt fa-2x"></i></a>
+                    </div>
+                </div>
+                <div id="mapid"></div>
+            </section>
+            <!-- CONTACT -->
+        </main>
+
+       <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+       crossorigin=""></script>
+       <script src="./public/javascripts/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+.name {
+    @include height-bk-color($colour-secondary);
+    @include selection($colour-secondary, rgba(255,253,216,0.99));
+    color: $colour-quaternary;
+    text-align: center;
+    h1 {
+        padding-top: 30vh;
+        font-size: 5em;
+    }
+    hr {
+        border: 1px solid $colour-quaternary;
+        width: 6em;
+        margin: 2em auto;
+    }
+}
+
+.intro {
+    @include selection($colour-quaternary, $colour-secondary);
+    position: relative;
+    padding: 100px 200px;
+    margin: -30vh 6em 0;
+    background-color: white;
+    font-weight: 600;
+    text-align: center;
+    h1 {
+        font-size: $title-size;
+        margin-bottom: 75px;
+        color: $colour-primary;
+    }
+    p {
+        line-height: 2em;
+    }
+}
+
+@media (max-width: 1059px) {
+    .intro {
+        padding: 100px 50px;
+        margin: -30vh 0 0;
+    }
+}
+
+@media (max-width: 719px) {
+    .name {
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+    }
+    .intro {
+        padding: 100px 20px;
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

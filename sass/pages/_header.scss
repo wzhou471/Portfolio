@@ -1,0 +1,55 @@
+.navbar {
+  @include selection($colour-secondary, rgba(255,253,216,0.99));
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $colour-primary;
+  padding: 16px;
+  color: $colour-quaternary;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  a {
+    color: $colour-quaternary;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  &__link {
+    padding-right: 45px;
+    &-toggle {
+      display: none;
+      .fas {
+        margin-top: -7px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    &--right {
+      margin-left:auto;
+    }
+  }
+}
+  
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    &__link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     }
+    &__items {
+      flex-direction: column;
+      display:none;
+      &--right {
+        margin-left:0;
+      }
+    }
+    &__toggleShow {
+      display: flex;
+    }
+  }
+}

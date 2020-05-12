@@ -1,0 +1,12 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+@import "./base/base";
+
+@import "./layout/header";
+
+@import "./pages/competences";
+@import "./pages/contact";
+@import "./pages/formations";
+@import "./pages/presentation";

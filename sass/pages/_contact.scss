@@ -1,0 +1,51 @@
+.contact-section {
+    @include selection($colour-secondary, rgba(255,253,216,0.99));
+    padding: 150px 200px 25px;
+    margin: 0 6em;
+    background-color: $colour-secondary;
+    color: $colour-quaternary;
+    text-align: center;
+    h1 {
+        font-size: $title-size;
+    }
+}
+
+.contact {
+    margin: 50px 0 0px;
+    .btn {
+        border-radius: 2em;
+        display: inline-block;
+        font-weight: 700;
+        letter-spacing: .12em;
+        padding: 1em 2em;
+        margin: 20px 0 0;
+        background: $colour-quinary;
+    }
+    a {
+        color: $colour-quaternary;
+    }
+    i {
+        padding: 20px;
+    }
+}
+
+#mapid {
+    height: 350px;
+    width: 100%;
+}
+
+@media (max-width: 1059px) {
+    .contact-section {
+        padding: 150px 50px 50px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 719px) {
+    .contact-section {
+        padding: 100px 0px 0px;
+        h1 {
+            font-size: 2em;
+        }
+    }
+}
