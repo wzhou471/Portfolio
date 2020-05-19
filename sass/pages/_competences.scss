@@ -25,10 +25,39 @@
         border: 1px solid $colour-senary;
         &:hover {
             transition: all 0.2s ease-out;
-            box-shadow: -6px 7px $colour-secondary;
             top: -6px;
             right: -6px;
             border: 1px solid $colour-senary;
+        }
+        &--html:hover {
+            box-shadow: -6px 7px $colour-secondary;
+        }
+        &--css:hover {
+            box-shadow: -6px 7px #2652E1;
+        }
+        &--javascript:hover {
+            box-shadow: -6px 7px #F7DE3B;
+        }
+        &--react:hover {
+            box-shadow: -6px 7px #67DCF9;
+        }
+        &--bootstrap:hover {
+            box-shadow: -6px 7px #563F7B;
+        }
+        &--express:hover {
+            box-shadow: -6px 7px #82C636;
+        }
+        &--mongodb:hover {
+            box-shadow: -6px 7px #248536;
+        }
+        &--git:hover {
+            box-shadow: -6px 7px $colour-secondary;
+        }
+        &--github:hover {
+            box-shadow: -6px 7px black;
+        }
+        &--animal:hover {
+            box-shadow: -6px 7px #8C692E;
         }
         h3 {
             margin-bottom: 1em;

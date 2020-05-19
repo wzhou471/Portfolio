@@ -23,12 +23,13 @@
     &-toggle {
       display: none;
       .fas {
-        margin-top: -7px;
+        margin-top: -5px;
       }
     }
   }
   &__items {
     display: flex;
+    align-items: center;
     &--right {
       margin-left:auto;
     }
@@ -52,7 +53,7 @@
       }
     }
     &__toggleShow {
-      display: flex;
+      display: initial;
     }
   }
 }
